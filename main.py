@@ -31,7 +31,7 @@ print(f"[User transcript]: {transcript}")
 #   text -> LLM response (Cohere) 
 co = cohere.Client(COHERE_API_KEY)
 
-# keep it super-stable by using the classic generate endpoint
+# keep it stable by using the classic generate endpoint
 prompt = (
     "You are a helpful assistant. Reply concisely.\n\n"
     f"User said: \"{transcript}\"\n"
